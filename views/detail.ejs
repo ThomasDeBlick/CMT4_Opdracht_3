@@ -1,0 +1,32 @@
+<%- include('header'); -%>
+
+
+
+<article class="detailpagina">
+
+  <img src="/Icons/museum.svg" alt="" class="ADlogo">
+  <div class="Bovenlogo">POP-UP MUSEUM </div>
+  <div class="Lijn"></div>
+
+  <h1 class="Dname"><%=post.title %></h1>
+  
+  <img class="Dschilderij" src= <%=post.image %> >
+
+  <div class="beschrijving">
+  
+    <date class="datum"><div class="Dbijtitel">Artiest:   </div><%=post.artist %></date> <br>
+
+    <date class="datum"><div class="Dbijtitel">Datum:   </div><%=post.date %></date> <br>
+
+    <date class="datum"><div class="Dbijtitel">Afmetingen:   </div><%=post.dim %></date> <br>
+
+    <div class="data-filter prog"><div class="Dbijtitel">Exhibitie:   </div><%=post.ex %></div> <br>
+
+ 
+   <p class="detailbeschrijving"><%=post.content %></p>
+
+  </div>
+
+</article>
+
+<%- include('footer'); -%>

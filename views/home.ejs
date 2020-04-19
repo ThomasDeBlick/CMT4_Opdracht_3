@@ -1,0 +1,68 @@
+<%- include('header'); -%>
+
+<div class="Hoofd">
+
+  
+
+    <div class="headerachtergrond">
+        
+       
+    
+    </div>
+
+    <div class="Titel"> Pop-up museum</div>
+
+    <img src="/Icons/museum.svg" alt="" class="museumicoon">
+</div>
+
+
+
+<div class="feed">
+    <h1 class="Exhibits"> IN DE KIJKER</h1>
+
+    
+        <div class="kijker">
+
+
+
+            <% var arr = [] %>
+             <% arr =   Math.floor((Math.random() * 10) + 1);    %>
+             <% var source = "paintings/img"+arr+".jpg"; %>
+             <%- include('IndivPaintings', {post: posts[arr], index: arr}); -%>
+
+          
+  
+      
+    </div>
+
+
+
+
+    <h1 class="Exhibits"> EXHIBITIES</h1>
+
+    <div class="EXP1">
+
+    <h1>BEKENDE SCHILDERIJEN</h1>
+
+    <h4>De 10 meest bekende schilderijen ooit</h4>
+
+
+    </div>
+
+    <div class="EXP2">
+
+    <h1>DAHLI'S DARLINGS</h1>
+
+    <h4>Salvador dahli zijn favoriete werken</h4>
+
+
+</div>
+
+
+
+
+</div>
+
+
+
+<%- include('footer'); -%>

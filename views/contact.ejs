@@ -1,0 +1,78 @@
+<%- include('header'); -%>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin=""/>
+
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+crossorigin=""></script>
+
+
+<div class="infocontainer">
+    <img src="/Icons/museum.svg" alt="" class="ADlogo">
+    <div class="Bovenlogo">POP-UP MUSEUM </div>
+    <div class="Lijn"></div>
+
+</div>
+
+
+<img src="/images/Hachtergrond.jpg" alt="" class="centerfoto">
+
+
+<div class="Uitleg">
+
+    <p>POP-UP museum is een vast museumgebouw dat elke maand 3 verschillende exposities houd in zijn 3 verschillende zalen. Wij krijgen kunstwerken toegestuurd van over heel de wereld, die wij met trots elke maand laten zien aan de wereld.</p>
+    
+</div>
+
+
+<ul class="infolijst">
+
+    <li> <div class="TITEL">  contact</div      ></li>
+
+    <li>Tel: <div class="Bold">  +32476 87 19 39</div      ></li>
+
+    <li>Email: <div class="Bold">  popupmuseum@hotmail.be</div      ></li>
+
+    <li>Web: <div class="BoldUnd">  www.popupmuseum.be</div      ></li>
+
+    <li>Adress: <div class="Bold">  Karel Soetelaan 90, Borsbeek 2150</div      ></li>
+
+</ul>
+
+    
+<div id="mapid"></div>
+
+<ul class="openingsuren">
+
+    <li> <div class="TITEL">  openingsuren</div      ></li>
+
+    <li>Maandag: <div class="Bold">  10h - 18h</div      ></li>
+
+    <li>Dinsdag: <div class="Bold"> 10h - 18h</div      ></li>
+
+    <li>Woensdag: <div class="Bold">  10h - 18h</div      ></li>
+
+    <li>Donderdag: <div class="Bold">  10h - 18h</div      ></li>
+
+    <li>Vrijdag: <div class="Bold">  10h - 18h</div      ></li>
+
+    <li>Zaterdag: <div class="Bold">  10h - 18h</div      ></li>
+
+    <li>Zondag: <div class="Bold">  Gesloten</div      ></li>
+
+
+
+</ul>
+
+
+
+
+</div>
+
+
+<script src="/script/leaflet.js"></script>
+
+
+<%- include('footer'); -%>

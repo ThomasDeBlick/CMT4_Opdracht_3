@@ -1,0 +1,43 @@
+<%- include('header'); -%>
+
+
+
+
+
+<div class="knoppengroep">
+
+  <img src="/Icons/museum.svg" alt="" class="ADlogo">
+  <div class="Bovenlogo">POP-UP MUSEUM </div>
+  <div class="Lijn"></div>
+
+  <div class="filtergroep">
+
+    <img src="/Icons/filter.svg" alt="" class="filter">
+    <div class="Fheader">Filter voor exhibities</div>
+
+  </div>
+
+<div class="button-group filters-button-group">
+   
+  <button class="button" data-filter="*">show all</button>
+  <button class="button" data-filter=".Famous">Bekende schilderijen</button>
+  <button class="button" data-filter=".darlings">Dahli's Darlings</button>
+
+
+</div>
+
+</div>
+
+
+
+<div class="grid">
+
+  <% for (let i=0; i<posts.length; i++) { %>
+   
+      <%- include('IndivPaintings', {post: posts[i], index: i}); -%>
+    
+  <% } // close forloop %>
+
+</div>
+
+<%- include('footer'); -%>
